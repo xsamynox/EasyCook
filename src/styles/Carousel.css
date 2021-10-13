@@ -1,0 +1,19 @@
+.carousel .control-next.control-arrow:before{
+    content:url('../Images/arrow2.png') !important;
+    transform: matrix(1, 0, 0, 1, 13, 0);
+    border: none !important;
+}
+.carousel .control-prev.control-arrow:before{
+    content:url('../Images/arrow1.png') !important;
+    transform: matrix(1, 0, 0, 1, -14, 0);
+    border: none !important;
+}
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+    opacity: initial !important;
+}
+.carousel .control-dots .dot {
+    background: #FF9635 !important;
+    width: 10px !important;
+    height: 10px !important; 
+    margin: 0 8px;
+}
