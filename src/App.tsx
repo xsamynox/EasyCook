@@ -1,14 +1,10 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
-import CarouselEasycook from "./Components/CarouselEasycook";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Filter from "./Components/Filter";
 import Header from "./Components/Header";
 import Login from "./Components/Login";
 import Main from "./Components/Main";
+import NotFound from "./Components/NotFound";
 import Post from "./Components/Post";
 import Register from "./Components/Register";
 import TemplateDetail from "./Components/TemplateDetail";
@@ -45,6 +41,9 @@ class App extends React.Component {
           <Route exact path="/profile">
             <Header />
           </Route>
+          <Route>
+            <NotFound/>
+          </Route>
         </Switch>
       </Router>
     );
@@ -52,4 +51,3 @@ class App extends React.Component {
 }
 
 export default App;
-
